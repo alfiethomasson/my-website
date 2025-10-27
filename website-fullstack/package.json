@@ -5,8 +5,8 @@
   "homepage": "https://alfiethomasson.github.io/my-website",
   "scripts": {
     "dev": "next dev",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "next start",
+    "build": "next build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
