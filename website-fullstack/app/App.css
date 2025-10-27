@@ -1,0 +1,13 @@
+.hello-aila {
+  text-align: center;                /* Center the text */
+  font-size: 3rem;                   /* Large text */
+  font-family: Arial, Helvetica, sans-serif; /* Easy-to-read font */
+  color: #333;                       /* Dark text for readability */
+  background-color: #f0f8ff;         /* Light blue box */
+  border: 3px solid #1e90ff;         /* Blue border */
+  border-radius: 15px;               /* Rounded corners */
+  padding: 30px;                     /* Space inside the box */
+  margin: 50px auto;                 /* Center box horizontally + spacing on top */
+  width: fit-content;                 /* Box wraps content neatly */
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.2); /* Soft shadow for depth */
+}
