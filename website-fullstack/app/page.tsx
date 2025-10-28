@@ -1,23 +1,11 @@
-import './App.css';
-
-interface MyButtonProps {
-  /** The text to display inside the button */
-  title: string;
-  /** Whether the button can be interacted with */
-  disabled: boolean;
-}
-
-function MyButton({ title, disabled }: MyButtonProps) {
+export default function HomePage() {
   return (
-    <button>{title}</button>
-  );
-}
-
-export default function MyApp() {
-  return (
-    <div>
-      <h1 className="hello-aila">Hello Aila :)</h1>
-      {/*<MyButton title="I'm a disabled button" disabled={true}/> */}
-    </div>
+    <section className="home">
+      <div>
+        <h2>Welcome to my site</h2>
+        <p>Hello! You are most welcome to visit my site.</p>
+        <button>Learn More</button>
+      </div>
+    </section>
   );
 }

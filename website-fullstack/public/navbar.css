@@ -1,0 +1,12 @@
+
+.navLink {
+  color: #3949ab;            /* match your theme */
+  margin: 0 1rem;            /* spacing between links */
+  text-decoration: none;      /* remove underline */
+  font-weight: 500;           /* slightly bolder */
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #1a237e;             /* darker on hover */
+}
