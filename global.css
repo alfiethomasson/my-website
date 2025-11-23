@@ -1,0 +1,184 @@
+.home {
+  display: flex;
+  flex-direction: column;    /* stack content vertically */
+  justify-content: flex-start; /* align content at the top */
+  align-items: center;       /* center horizontally */
+  min-height: 100vh;         /* still full height */
+  padding: 2rem;
+  text-align: center;
+  color: #ffffff;
+  font-family: Courier, monospace;
+  position: relative;
+}
+
+/* Inner content wrapper */
+.home-container {
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 10vh;
+  padding: 2rem;
+  font-family: Courier, monospace;
+
+  background-color: rgba(10, 10, 34, 0.95); /* semi-transparent dark background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);  /* subtle shadow for depth */
+  border-radius: 0.5rem;                    /* optional rounded corners */
+  position: sticky;                         /* stays at top when scrolling */
+  top: 0;
+  z-index: 1000;                            /* above content */
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;     /* stack home + links vertically */
+    align-items: flex-start;    /* align to left for mobile */
+    padding: 1rem;
+  }
+
+  .nav-items {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+    gap: 0.5rem;
+  }
+
+  .navLink {
+    font-size: 1rem;            /* slightly smaller links on mobile */
+  }
+}
+
+
+.homeContent {
+  max-width: 600px;
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.home p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.home button {
+  background-color: #3949ab;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.home button:hover {
+  background-color: #303f9f;
+  transform: translateY(-2px);
+}
+
+.navLink {
+  color: #acabab;           /* match your theme */
+  margin: 0 1rem;            /* spacing between links */
+  text-decoration: none;      /* remove underline */
+  font-weight: 500;           /* slightly bolder */
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #1a237e;             /* darker on hover */
+}
+
+.nav-items {
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;         /* allow items to wrap on small screens */
+  gap: 1rem;               /* space between links */
+}
+
+
+.body-background {
+  background: linear-gradient(135deg, #090d38, #0b3c69);
+}
+
+.navbar-list-item {
+  font-weight: bold;
+  color: #1f750e;
+}
+
+.return-home-button {
+  font-size: 1.8rem;       /* bigger text */
+  font-weight: 700;         /* bold */
+}
+
+/* Subtitle / welcome */
+.home-welcome {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #acabab;
+  text-align: left;       /* slightly left */
+  margin-left: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Main name */
+.home-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  opacity: 0;                /* starting invisible */
+  transform: translateY(20px); /* start slightly below */
+  animation: fadeInUp 2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Intro paragraph */
+.home-intro {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #cccccc;
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0;                /* starting invisible */
+  transform: translateX(20px); /* start slightly below */
+  animation: fadeInLeft 5s forwards;
+  animation-delay: 1.2s;
+}
+
+/* Button */
+.home-button {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3949ab;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  animation: fadeInUp 5s forwards;
+  animation-delay: 0.3s;
+}
